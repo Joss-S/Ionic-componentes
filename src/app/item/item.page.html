@@ -1,0 +1,47 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="secondary">
+    <ion-title mode="ios" >
+      Item
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Item</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-item-sliding>
+    <ion-item color="secondary">
+      <ion-avatar aria-hidden="true" slot="start">
+        <img alt="" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+      </ion-avatar>
+      <ion-label>Joss</ion-label>
+    </ion-item>
+    <ion-item-options slot="end">
+      <ion-item-option color="warning">
+        <ion-icon slot="icon-only" name="pin"></ion-icon>
+      </ion-item-option>
+      <ion-item-option color="tertiary">
+        <ion-icon slot="icon-only" name="share"></ion-icon>
+      </ion-item-option>
+      <ion-item-option color="danger" expandable="true">
+        <ion-icon slot="icon-only" name="trash"></ion-icon>
+      </ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+  <ion-item color="secondary">
+    <ion-select mode="ios" label="Videojuego favorito" placeholder="Make a Selection">
+      <ion-select-option color="secondary" value="">Fornite</ion-select-option >
+      <ion-select-option value="nes">Call of Duty</ion-select-option>
+      <ion-select-option value="nes">Mortal Kombat II</ion-select-option>
+      <ion-select-option value="nes">Fnaf</ion-select-option>
+      <ion-select-option value="n64">Roblox</ion-select-option>
+      <ion-select-option value="ps">Minecraft</ion-select-option>
+      <ion-select-option value="genesis">Mario kart</ion-select-option>
+    </ion-select>
+  </ion-item>
+  
+</ion-content>

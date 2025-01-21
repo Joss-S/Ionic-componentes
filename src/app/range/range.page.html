@@ -1,0 +1,46 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Range</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">range</ion-title>
+    </ion-toolbar>
+  </ion-header>
+<!-- Basic -->
+
+<!-- Before -->
+<ion-item>
+  <ion-label>Calificación</ion-label>
+  <ion-range mode="ios" aria-label="Custom range"
+    [min]="0"
+    [max]="10"
+    [value]="5"
+    [pin]="true"
+    [ticks]="true"
+    [snaps]="true"></ion-range>
+</ion-item>
+
+<!-- After -->
+<ion-item>
+  <ion-range mode="ios"label="Clima">
+  <ion-icon slot="start" name="snow-outline"></ion-icon>
+  <ion-icon slot="end" name="sunny-outline"></ion-icon>></ion-range>
+</ion-item>
+
+<!-- Fixed Labels -->
+
+<!-- Before -->
+<ion-item>
+  <ion-label position="fixed">Notifications</ion-label>
+  <ion-range mode="ios" aria-label="Custom range" [value]="50" [pin]="true"></ion-range>
+</ion-item>
+
+<!-- After -->
+<ion-item>
+  <ion-range mode="ios" labelPlacement="fixed" label="Notifications"   aria-label="Dual Knobs Range" [dualKnobs]="true" [value]="{ lower: 20, upper: 80 }"></ion-range>
+</ion-item>
+</ion-content>

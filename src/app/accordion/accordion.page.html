@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Accordion</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">accordion</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-accordion-group expand="inset">
+    <ion-accordion value="first">
+      <ion-item slot="header" color="#fff;">
+        <ion-label>The last of us </ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">La serie The Last of Us, basada en el aclamado videojuego de Naughty Dog, es un drama postapocalíptico que sigue a Joel y Ellie mientras intentan sobrevivir en un mundo devastado por un brote fúngico que convierte a los humanos en criaturas agresivas y zombificadas llamadas "infectados".</div>
+    </ion-accordion>
+    <ion-accordion value="second">
+      <ion-item slot="header" color="#000;">
+        <ion-label>Moon Knight</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">Steven Grant, un empleado de una tienda de regalos con una vida aparentemente normal, comienza a experimentar episodios de pérdida de memoria y visiones extrañas. Pronto descubre que comparte su cuerpo con Marc Spector, un mercenario que actúa como el avatar humano de Khonshu, el dios egipcio de la Luna y la venganza.</div>
+    </ion-accordion>
+    <ion-accordion value="third">
+      <ion-item slot="header"  color="#FFC0CB" >
+        <ion-label>El juego del calamar</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">456 personas con graves problemas económicos son invitadas a participar en una competencia secreta. Los juegos parecen simples pruebas basadas en juegos infantiles, pero los participantes pronto descubren que perder significa la muerte. A medida que avanza la competencia, los jugadores enfrentan decisiones morales, alianzas estratégicas y traiciones.</div>
+    </ion-accordion>
+  </ion-accordion-group>
+</ion-content>
