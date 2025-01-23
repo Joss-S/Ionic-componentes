@@ -11,13 +11,14 @@
     </ion-toolbar>
   </ion-header>
   <ion-item>
-    <ion-input label="Correo electronico" labelPlacement="floating"></ion-input>
+    <ion-input [(ngModel)]= "email" label="Correo electronico" labelPlacement="floating" type="email"></ion-input>
   </ion-item>
   <ion-item>
-    <ion-input label="Contraseña" labelPlacement="floating" type="Password" value="password"></ion-input>
+    <ion-input [(ngModel)]= "password" label="Contraseña" labelPlacement="floating" type="Password"></ion-input>
   </ion-item>
   <br>
-  <ion-button expand="block" routerLink="/Inicio">
+  <ion-button (click)= "login()" expand="block" >
     Ingresar 
   </ion-button>
 </ion-content>
+ 
